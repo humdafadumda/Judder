@@ -1,0 +1,92 @@
+﻿
+<div class="panel">
+    <form>
+        <div class="row">
+            <div class="large-4 columns">
+                <label>
+                    Sequence
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </label>
+            </div>
+            <div class="large-4 columns">
+                <label>
+                    Warehouse
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </label>
+            </div>
+            <div class="large-4 columns">
+                <label>
+                    Group
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="large-4 columns">
+                <label>
+                    Number
+                    <input type="text" placeholder="enter your search pattern here" />
+                </label>
+            </div>
+            <div class="large-4 columns">
+                <label>
+                    Status
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </label>
+            </div>
+            <div class="large-4 columns">
+                <label>
+                    <!--<div class="clearfix" style="background-color:aqua">-->
+                    <a role="button" aria-label="submit form" href="#" class="button right tiny" style="margin-top:0.5rem">Default</a>
+                    <!--</div>-->
+                </label>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="large-12 columns">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Sequence</th>
+                        <th>Table Header</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each}}
+                    <tr>
+                        <td>{{#link-to 'inventories.inventory' this}}{{number}}{{/link-to}}</td>
+                        <td>{{#link-to 'settings.sequences.sequence' sequence}}{{sequence.code}}{{/link-to}}</td>
+                        <td>{{#link-to 'settings.sequences.sequence.edit_sequence' sequence}}{{sequence.descriptions}}{{/link-to}}</td>
+                        <td>{{#link-to 'inventories.inventory.edit_inventory' this}}edit{{/link-to}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

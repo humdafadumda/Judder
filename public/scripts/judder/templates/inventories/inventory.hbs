@@ -1,0 +1,41 @@
+﻿<div class="row">
+    <div class="col-md-4">
+        <div class="well">
+            <p class="text-centered">
+            </p>
+            <h4></h4>
+            <div class="row">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <label>
+                            Sequence
+                            <select>
+                                <option value="1">InventoryList 1</option>
+                                <option value="2">InventoryList 2</option>
+                                <option value="3">InventoryList 3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <label>
+                            Date Created
+                            <input type="text" disabled  value="20/11/2014"/>
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <label>
+                            Created By
+                            <input type="text" disabled value="Rudy" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>
+                {{#link-to 'inventories'}}Back{{/link-to}}
+            </p>
+        </div>
+    </div>
+    <div class="col-md-8">
+        {{outlet}}
+    </div>
+</div>
