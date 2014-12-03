@@ -1,4 +1,21 @@
-Judder
-======
+﻿### Judder
+#### Sample App, EmberJS ob NodeJS
 
-An EmberJS app on NodeJS using express 4.0, passport, etc...
+NodeJS w/ ExpressJS, EmberJS, Passport
+
+also Grunt
+
+
+#### Usage
+
+`npm install`
+
+run `grunt` or `node server.js`
+
+http://localhost:666
+
+##### TODO
+
+- flash messages
+- pagination
+- tests
