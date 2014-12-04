@@ -19,3 +19,6 @@ http://localhost:666
 - flash messages
 - pagination
 - tests
+- mssql
+- maybe edge.js
+- maybe socket.io or signal R to sync a mssql database with a mongoDB
